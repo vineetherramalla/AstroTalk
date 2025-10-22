@@ -32,8 +32,7 @@ const Services = () => {
               key={service.id}
               title={service.title}
               description={service.description}
-              price={service.price}
-              duration={service.duration}
+              
               icon={service.icon}
               delay={index * 0.1}
             />
@@ -52,7 +51,7 @@ const Services = () => {
             <div>
               <h3 className="font-semibold text-foreground mb-2">Before Your Session</h3>
               <p>
-                You'll receive a confirmation email with preparation guidelines and a questionnaire to help me
+                You'll receive a confirmation with preparation guidelines and a questionnaire to help me
                 understand your needs. Please have your birth details ready (date, time, and place).
               </p>
             </div>
@@ -66,7 +65,7 @@ const Services = () => {
             <div>
               <h3 className="font-semibold text-foreground mb-2">After Your Session</h3>
               <p>
-                You'll receive a detailed PDF summary of our session, including key insights, recommendations, and
+                You'll receive a detailed summary of our session, including key insights, recommendations, and
                 follow-up resources to continue your cosmic journey.
               </p>
             </div>

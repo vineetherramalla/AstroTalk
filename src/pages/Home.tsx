@@ -55,9 +55,9 @@ const Home = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Button
-                onClick={() => navigate("/booking")}
+                onClick={() => navigate("/contact")}
                 size="lg"
-                className="gradient-cosmic text-primary-foreground font-semibold text-lg px-8 hover:shadow-glow transition-smooth"
+                className="gradient-cosmic text-white font-semibold text-lg px-8 hover:shadow-glow transition-smooth"
               >
                 Book Your Consultation
               </Button>
@@ -65,7 +65,7 @@ const Home = () => {
                 onClick={() => navigate("/services")}
                 size="lg"
                 variant="outline"
-                className="font-semibold text-lg px-8 border-primary hover:bg-primary/10 transition-smooth"
+                className="font-semibold text-lg px-8 border-primary hover:shadow-glow transition-smooth"
               >
                 Explore Services
               </Button>
@@ -153,10 +153,6 @@ const Home = () => {
                 </div>
                 <h3 className="text-xl font-serif font-semibold mb-2">{service.title}</h3>
                 <p className="text-muted-foreground mb-4">{service.description}</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-muted-foreground">{service.duration}</span>
-                  <span className="text-xl font-serif font-bold text-primary">${service.price}</span>
-                </div>
               </motion.div>
             ))}
           </div>
@@ -233,7 +229,7 @@ const Home = () => {
               Book your personalized consultation and unlock the wisdom of the stars
             </p>
             <Button
-              onClick={() => navigate("/booking")}
+              onClick={() => navigate("/contact")}
               size="lg"
               variant="secondary"
               className="font-semibold text-lg px-8 bg-background text-foreground hover:bg-background/90 transition-smooth"

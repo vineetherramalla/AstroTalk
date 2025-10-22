@@ -2,14 +2,12 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ThemeSwitcher } from "./ThemeSwitcher";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
   { path: "/", label: "Home" },
   { path: "/about", label: "About" },
   { path: "/services", label: "Services" },
-  { path: "/booking", label: "Book Now" },
   { path: "/contact", label: "Contact" },
 ];
 
@@ -52,12 +50,10 @@ export const Navbar = () => {
                 )}
               </Link>
             ))}
-            <ThemeSwitcher />
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-2">
-            <ThemeSwitcher />
             <Button
               variant="ghost"
               size="icon"

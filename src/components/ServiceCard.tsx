@@ -7,8 +7,7 @@ import { useNavigate } from "react-router-dom";
 interface ServiceCardProps {
   title: string;
   description: string;
-  price: number;
-  duration: string;
+
   icon: string;
   delay?: number;
 }
@@ -22,7 +21,7 @@ const iconMap: Record<string, LucideIcon> = {
   Hash,
 };
 
-export const ServiceCard = ({ title, description, price, duration, icon, delay = 0 }: ServiceCardProps) => {
+export const ServiceCard = ({ title, description, icon, delay = 0 }: ServiceCardProps) => {
   const navigate = useNavigate();
   const IconComponent = iconMap[icon] || Sparkles;
 
@@ -42,14 +41,11 @@ export const ServiceCard = ({ title, description, price, duration, icon, delay =
         </CardHeader>
         <CardContent className="flex-grow">
           <p className="text-muted-foreground mb-4">{description}</p>
-          <div className="flex items-center justify-between text-sm">
-            <span className="text-muted-foreground">{duration}</span>
-            <span className="text-2xl font-serif font-bold text-primary">${price}</span>
-          </div>
+          
         </CardContent>
         <CardFooter>
           <Button
-            onClick={() => navigate("/booking")}
+            onClick={() => navigate("/contact")}
             className="w-full gradient-cosmic text-primary-foreground font-semibold hover:shadow-glow transition-smooth"
           >
             Book Now

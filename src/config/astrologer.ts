@@ -1,10 +1,10 @@
 export const astrologerConfig = {
-  name: "Dr. Stella Cosmos",
+  name: "Dr. Pandit",
   title: "Master Astrologer & Spiritual Guide",
   tagline: "Illuminating Your Cosmic Path Through the Stars",
   email: "stella@celestialinsights.com",
-  phone: "+1 (555) 123-4567",
-  location: "Los Angeles, CA",
+  phone: "+91 98765 43214",
+  location: "Miyapur, Hyderabad",
   
   bio: "With over 20 years of experience in Vedic Astrology, Tarot, and Numerology, I've guided thousands of souls on their cosmic journey. My approach combines ancient wisdom with modern insights to provide transformative readings that empower and enlighten.",
   
@@ -36,48 +36,41 @@ export const astrologerConfig = {
       id: "birth-chart",
       title: "Birth Chart Reading",
       description: "Comprehensive analysis of your natal chart, revealing your life purpose, strengths, and karmic patterns.",
-      price: 199,
-      duration: "90 minutes",
       icon: "Moon"
     },
     {
       id: "compatibility",
       title: "Compatibility Analysis",
       description: "Deep dive into relationship dynamics and cosmic compatibility between two individuals.",
-      price: 249,
-      duration: "60 minutes",
+      
       icon: "Heart"
     },
     {
       id: "career",
       title: "Career & Life Path",
       description: "Discover your optimal career direction and life purpose through astrological insights.",
-      price: 179,
-      duration: "60 minutes",
+      
       icon: "Compass"
     },
     {
       id: "tarot",
       title: "Tarot Consultation",
       description: "Intuitive tarot reading to gain clarity on current situations and future possibilities.",
-      price: 129,
-      duration: "45 minutes",
+      
       icon: "Sparkles"
     },
     {
       id: "transit",
       title: "Transit Forecast",
       description: "Understand upcoming planetary influences and how to navigate them successfully.",
-      price: 149,
-      duration: "45 minutes",
+      
       icon: "Calendar"
     },
     {
       id: "numerology",
       title: "Numerology Reading",
       description: "Unlock the hidden meanings in your life through the power of sacred numbers.",
-      price: 119,
-      duration: "30 minutes",
+      
       icon: "Hash"
     }
   ],
@@ -116,5 +109,5 @@ export const astrologerConfig = {
     youtube: "https://youtube.com/@celestialinsights"
   },
   
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.4!2d-118.2437!3d34.0522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDAzJzA3LjkiTiAxMTjCsDE0JzM3LjMiVw!5e0!3m2!1sen!2sus!4v1234567890"
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30437.73141359257!2d78.32358583624688!3d17.521045061818267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9279676f8f1d%3A0x6d53fb3b4ed44f8a!2sMiyapur%2C%20Telangana!5e0!3m2!1sen!2sin!4v1761050037517!5m2!1sen!2sin"
 };
