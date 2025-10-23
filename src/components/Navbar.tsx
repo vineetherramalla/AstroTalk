@@ -23,7 +23,7 @@ export const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2 group">
             <Sparkles className="h-6 w-6 text-primary group-hover:text-accent transition-smooth animate-float" />
-            <span className="font-serif text-xl font-bold bg-gradient-cosmic bg-clip-text text-transparent">
+            <span className="font-serif text-xl font-bold bg-gradient-cosmic bg-clip-text text-white">
               Celestial Insights
             </span>
           </Link>

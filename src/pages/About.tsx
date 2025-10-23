@@ -20,7 +20,7 @@ const About = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
         >
-          <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 bg-gradient-cosmic bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 bg-gradient-cosmic bg-clip-text text-white">
             About {astrologerConfig.name}
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">

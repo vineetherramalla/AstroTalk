@@ -2,8 +2,9 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { TestimonialCard } from "@/components/TestimonialCard";
+import { ServiceCard } from "@/components/ServiceCard";
 import { astrologerConfig } from "@/config/astrologer";
-import { Sparkles, Star, Moon } from "lucide-react";
+import { Sparkles, Star } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import heroImage from "@/assets/hero-cosmic.jpg";
 import astrologerPortrait from "@/assets/astrologer-portrait.jpg";
@@ -39,7 +40,7 @@ const Home = () => {
             </motion.div>
 
             <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 animate-fade-in-up">
-              <span className="bg-gradient-cosmic bg-clip-text text-transparent">
+              <span className="bg-gradient-cosmic bg-clip-text text-white">
                 {astrologerConfig.tagline}
               </span>
             </h1>
@@ -112,7 +113,7 @@ const Home = () => {
               <Button
                 onClick={() => navigate("/about")}
                 variant="outline"
-                className="border-primary hover:bg-primary/10 transition-smooth"
+                className="font-semibold text-lg px-8 border-primary hover:shadow-glow transition-smooth"
               >
                 Learn More About Me
               </Button>
@@ -140,20 +141,14 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {astrologerConfig.services.slice(0, 3).map((service, index) => (
-              <motion.div
+              <ServiceCard
                 key={service.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-card border border-border rounded-lg p-6 shadow-card hover:shadow-cosmic transition-smooth"
-              >
-                <div className="mb-4 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Moon className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="text-xl font-serif font-semibold mb-2">{service.title}</h3>
-                <p className="text-muted-foreground mb-4">{service.description}</p>
-              </motion.div>
+                title={service.title}
+                description={service.description}
+                image={service.image}
+                details={service.details}
+                delay={index * 0.1}
+              />
             ))}
           </div>
 
@@ -167,7 +162,7 @@ const Home = () => {
               onClick={() => navigate("/services")}
               size="lg"
               variant="outline"
-              className="border-primary hover:bg-primary/10 transition-smooth"
+              className="font-semibold text-lg px-8 border-primary hover:shadow-glow transition-smooth"
             >
               View All Services
             </Button>

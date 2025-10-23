@@ -13,7 +13,7 @@ const Contact = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
         >
-          <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 bg-gradient-cosmic bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 bg-gradient-cosmic bg-clip-text text-white">
             Get In Touch
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -148,12 +148,7 @@ const Contact = () => {
                 Don't wait to unlock the cosmic insights that await you. Book your personalized consultation today and
                 start your transformative journey.
               </p>
-              <a
-                href="/booking"
-                className="inline-block px-6 py-3 gradient-cosmic text-primary-foreground font-semibold rounded-lg hover:shadow-glow transition-smooth"
-              >
-                Book Your Reading
-              </a>
+              
             </Card>
           </motion.div>
         </div>
